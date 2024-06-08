@@ -192,8 +192,8 @@ h2 {
 }
 
 h3 {
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: bold;
     color: #121212;
 }
 
@@ -243,7 +243,9 @@ li {
 }
 
 /* -------- Donate Area ------- */
-
+.donate-form {
+    align-items: center;
+}
 
 .donate-form ul li {
     padding: 40px 25px;
@@ -280,9 +282,15 @@ li {
     border: none;
     border-bottom: 2px solid #cccccc;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 20px;
     cursor: text;
+}
+
+.donate-form input#custom-donate-amount::placeholder {
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .donate-form input#custom-donate-amount[type=number]::-webkit-outer-spin-button,
@@ -297,7 +305,27 @@ li {
 }
 
 /* -------- Donate Plan Area ------- */
+.plan-card {
+    padding: 30px;
+    border-radius: 8px;
+    margin: 15px;
+}
 
+.plan-card:first-child {
+    background-color: rgba(79, 157, 166, 0.1);
+}
+
+.plan-card:nth-child(2) {
+    background-color: rgba(255, 89, 89, 0.1);
+}
+
+.plan-card:last-child {
+    background-color: #FFF4D6;
+}
+
+.plan-card h3 {
+    margin-top: 25px;
+}
 
 /* -------- Why Donate Area ------- */
 
